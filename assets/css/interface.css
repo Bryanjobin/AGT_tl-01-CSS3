@@ -1,0 +1,189 @@
+/*HEADER*/
+.nav_list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 100px 40px 0 0;
+}
+
+.nav_list > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+/*PETIT HEADER*/
+.petit_header {
+    animation: slideIn 1s;
+    background-color: rgba(0, 0, 0, 0.867);
+    height: 75px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.petit_header:hover {
+    background-color: black;
+    transition: background-color .3s;
+}
+
+.petit_header > .nav_container {
+    display: grid; 
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+}
+
+.petit_header > .nav_container > .nav_list {
+    margin: 20px;
+}
+
+.petit_header > .nav_container > .nav_list > li > a {
+    margin: 5px;
+}
+
+.petit_header > .nav_container > .nav_list > li > a:hover {
+    color: rgb(247, 148, 42);
+    font-weight: bolder;
+    font-size: 1.2em;
+    transition: font-size 0.5s, color 1s;
+}
+
+.petit_header > .nav_container > .nav_list > li > a:focus {
+    color: cornflowerblue;
+    font-weight: bolder;
+    font-size: 1.2em;
+    outline: none;
+    transition: font-size .1s, color .3s;
+}
+
+.petit_header > .nav_container > .titreSite {
+    width: 300px;
+    text-align: center;
+}
+
+.petit_header > .nav_container > .titreSite > h2 {
+    font-size: 1em;
+}
+
+#titreSite {
+    grid-column: 2 / 3;    
+    grid-row: 1 / 2;
+}
+
+#nav_list {
+    grid-column: 3 / 5;    
+    grid-row: 1 / 2;
+}
+
+/* GROS HEADER */
+.grand_header {
+    align-items: center;
+    background-image: url(https://media3.giphy.com/media/PjxPX98p8ncCOzgKYP/giphy.gif?cid=ecf05e47qesczilnsz70y4jm1fa2r1yaofwi0vznr7s9kk8x&rid=giphy.gif&ct=g);
+    display: flex;
+    height: 1080px;    
+    justify-content: center;
+    text-align: center;
+}
+
+.grand_header > .nav_container > .titreSite > h1 {
+    animation: slideIn 2s;    
+    font-size: 10rem;
+    padding-bottom: 1em;
+}
+
+.grand_header > .nav_container > .titreSite > h2 {
+    animation: slideIn 2s;
+}
+
+.grand_header > .nav_container > .nav_list {
+    animation: slideIn 1s;
+}
+
+.grand_header > .nav_container > .nav_list > li > a {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.grand_header > .nav_container > .nav_list > li > a:hover {
+    color: rgb(247, 148, 42);
+    font-weight: bolder;
+    font-size: 3em;
+    transition: font-size .1s, color .3s;
+}
+
+.grand_header > .nav_container > .nav_list > li > a:focus {
+    color: cornflowerblue;
+    font-weight: bolder;    
+    font-size: 3em;
+    outline: none;    
+    transition: font-size .1s, color .3s;
+}  
+
+/* BOUTON RETOUR VERS LE HAUT */
+.box_bouton {
+    align-items: right;
+    animation: slideIn 1s;    
+    bottom: 20px;
+    position: fixed;
+    right: 20px;    
+    z-index: 99;
+}
+
+.retourhaut {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.867);
+    border-radius: 100%;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    transition: background-color .3s, opacity .3s;    
+    width: 70px;
+}
+
+.retourhaut:hover {
+    background-color: black;
+    height: 100px;
+    transition: height 0.5s, width 0.5s;    
+    width: 100px;
+}
+
+.retourhaut:active {
+    background-color: rgb(247, 148, 42);
+    transition: background-color 0.4s;
+}
+
+.fa-solid {
+    color: white;
+    font-size: 3em;
+    padding: 5px;
+}
+
+/*Animations*/
+@keyframes slideIn {
+    from {
+        opacity: 0;        
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 100;        
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;    
+    height: 200px;
+    justify-content: center;
+}
+
+footer > ul {
+    list-style: none;
+    text-align: center;
+}

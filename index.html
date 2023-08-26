@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TL-01 Bryan Jobin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/interface.css">
+    <script src="./assets/js/main.js" defer></script>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+</head>
+<body>
+    <header class="grand_header">
+        <div class="nav_container">
+            <div id="titreSite" class="titreSite">
+                <h1>TL-01 - CSS3</h1>
+                <h2>Par Bryan Jobin</h2>
+            </div>
+            <ul id="nav_list" class="nav_list">
+                <li><a id="A" href="#a">A</a></li>
+                <li><a id="B" href="#b">B</a></li>
+                <li><a id="C" href="#c">C</a></li>
+                <li><a id="D" href="#d">D</a></li>
+                <li><a id="E" href="#empty">E</a></li>
+                <li><a id="F" href="#f">F</a></li>
+                <li><a id="G" href="#g">G</a></li>
+                <li><a id="H" href="#empty">H</a></li>
+                <li><a id="I" href="#empty">I</a></li>
+                <li><a id="J" href="#empty">J</a></li>
+                <li><a id="K" href="#empty">K</a></li>
+                <li><a id="L" href="#empty">L</a></li>
+                <li><a id="M" href="#m">M</a></li>
+                <li><a id="N" href="#empty">N</a></li>
+                <li><a id="O" href="#o">O</a></li>
+                <li><a id="P" href="#empty">P</a></li>
+                <li><a id="Q" href="#empty">Q</a></li>
+                <li><a id="R" href="#empty">R</a></li>
+                <li><a id="S" href="#empty">S</a></li>
+                <li><a id="T" href="#t">T</a></li>
+                <li><a id="U" href="#empty">U</a></li>
+                <li><a id="V" href="#empty">V</a></li>
+                <li><a id="W" href="#empty">W</a></li>
+                <li><a id="X" href="#empty">X</a></li>
+                <li><a id="Y" href="#empty">Y</a></li>
+                <li><a id="Z" href="#empty">Z</a></li>
+            </ul>            
+        </div>
+    </header>
+    <main>
+        <div class="navigation">
+            <div class="box_bouton">
+                <div class="retourhaut" >
+                    <a href="#accueil"><i id="retourhaut_icone" class="fa-sharp fa-solid fa-arrow-up"></i></a>
+                </div>
+            </div>           
+        </div>
+        <article id="accueil" class="helloworld">
+            <p class="helloworld_txt">Hello World! :)</p>
+        </article>
+        <section id="a">
+            <h3>A</h3>
+            <div class="box-cartes">
+                <div class="carte">
+                    <h4>Animation</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Comme son nom l'indique, la propriété animation vient ajouter une animation de notre choix à un élément de notre choix ! Avec @Keyframes, nous donnons un nom de notre choix à l'animation, nous y ajoutons les propriétés CSS que nous voulons changer avec celle-ci, le temps d'action ainsi que le type d'animation. 
+                        </p>
+                        <p class="carte_description_exemple">
+                            Dans cet exemple ci-dessous, si nous déplaçons notre curseur sur la boîte orange, une animation viendra la changer de couleur et lui faire une rotation.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <div class="animation_exemple">
+                            <p>Placer le curseur ici</p>
+                        </div>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    .box {
+                                        background-color: rgb(247, 148, 42);
+                                        height: 100px;
+                                        width: 100px;
+                                    }
+
+                                    /* Quand la souris sera en hover sur la boîte l'animation se déclenchera */
+                                    .box:hover {
+                                        animation: exemple_Animation 5s;
+                                    }
+
+
+                                    @keyframes exemple_Animation {
+                                        from {
+                                            background-color: rgb(247, 148, 42);
+                                            transform: rotate(0deg);
+                                        }
+                                    
+                                        to {
+                                            background-color: cornflowerblue;
+                                            transform: rotate(180deg);
+                                        }
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="b">
+            <h3>B</h3>
+            <div class="box-cartes">
+                <div class="carte">
+                    <h4>Border-radius</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Avec la propriété Border-radius, nous pouvons arrondir les coins d'éléments HTML comme ceux d'une photo par exemple.
+                        </p>
+                        <p class="carte_description_exemple">
+                            Dans cet exemple ci-dessous, j'ai appliqué la propriété border-radius avec la valeur 8px sur une image.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <div class="box_border-radius_exemple">
+                            <img class="border-radius_exemple" src="https://i.ibb.co/z8DqZNR/324657645-510964754465755-1364415870542309143-n-1.jpg" alt="Shrek">
+                        </div>
+                        
+
+                        </img>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    img {
+                                        border-radius: 8px;
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="carte">
+                    <h4>Box-shadow</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Avec la propriété Box-shadow, nous pouvons ajouter une ombre à des éléments HTML.
+                        </p>
+                        <p class="carte_description_exemple">
+                            Dans cet exemple ci-dessous, j'ai appliqué la propriété box-shadow avec les valeurs 5px(x), 12px(y) ainsi que la couleur cornflowerblue sur la boîte orange.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <div class="box-shadow_exemple"></div>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    box {
+                                        background-color: rgb(247, 148, 42);
+                                        box-shadow: 5px 12px cornflowerblue;
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="c">
+            <h3>C</h3>
+            <div class="box-cartes">
+                <div class="carte">
+                    <h4>Caret-color</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Avec la propriété Caret-color, nous pouvons changer la couleur du curseur nous indiquant où écrire du texte dans un élément HTML.
+                        </p>
+                        <p class="carte_description_exemple">
+                            Dans cet exemple ci-dessous, j'ai appliqué la propriété caret-color et la valeur red sur une balise HTML input. Le curseur sera donc rouge.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <div class="box_caret-color_exemple">
+                            <input class="caret-color_exemple" type="text">
+                        </div>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    input {
+                                        caret-color: red;
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="carte">
+                    <h4>Column-count</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Avec la propriété column-count, nous pouvons séparer un texte en plusieurs colonnes.
+                        </p>
+                        <p class="carte_description_exemple">
+                            Dans cet exemple ci-dessous, j'ai appliqué la propriété CSS3 column-count avec la valeur 5 afin de séparer un texte en 5 colonnes.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <div >
+                            <p class="column-count_exemple">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis. Nec feugiat nisl pretium fusce id.
+                                Purus sit amet luctus venenatis lectus magna. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Sed viverra
+                                tellus in hac habitasse platea dictumst. Scelerisque varius morbi enim nunc. Aenean sed adipiscing diam donec adipiscing tristique. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Nascetur
+                                ridiculus mus mauris vitae ultricies leo. Etiam dignissim diam quis enim lobortis scelerisque. Diam maecenas ultricies mi eget. Massa eget egestas purus viverra accumsan in. Magna eget est lorem ipsum
+                                dolor sit amet consectetur. Sed vulputate mi sit amet mauris. Turpis tincidunt id aliquet risus feugiat in. Ac odio tempor orci dapibus ultrices. Sit amet consectetur adipiscing elit duis tristique
+                                sollicitudin nibh. Purus faucibus ornare suspendisse sed nisi. Enim sed faucibus turpis in eu mi bibendum. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Dignissim diam quis enim
+                                lobortis scelerisque fermentum. Tortor at risus viverra adipiscing at in tellus. Scelerisque purus semper eget duis at tellus at urna condimentum. Faucibus vitae aliquet nec ullamcorper sit amet risus 
+                                nullam. Pharetra vel turpis nunc eget. Maecenas accumsan lacus vel facilisis volutpat est velit. Dignissim diam quis enim lobortis scelerisque fermentum dui.
+                                Tellus pellentesque eu tincidunt tortor. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Ullamcorper morbi tincidunt ornare massa eget. Velit euismod in pellentesque massa. Erat 
+                                velit scelerisque in dictum non consectetur a erat nam. Nulla facilisi nullam vehicula ipsum a. Vitae et leo duis ut diam quam nulla porttitor massa. Ullamcorper malesuada proin libero nunc. Sit amet
+                                aliquam id diam. Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Faucibus turpis in eu mi bibendum neque egestas. Diam phasellus vestibulum lorem sed. Non enim praesent elementum
+                                facilisis leo vel fringilla. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. In cursus turpis massa tincidunt dui ut ornare lectus. Enim diam vulputate ut pharetra sit amet aliquam. Sit amet
+                                nulla facilisi morbi tempus iaculis urna id volutpat. Fringilla est ullamcorper eget nulla facilisi. Commodo sed egestas egestas fringilla phasellus. Convallis aenean et tortor at risus. Adipiscing bibendum
+                                est ultricies integer quis auctor. Amet luctus venenatis lectus magna fringilla urna porttitor. Cursus sit amet dictum sit. Euismod elementum nisi quis eleifend quam adipiscing vitae. Vestibulum lectus mauris
+                                ultrices eros in cursus. Tristique et egestas quis ipsum. Eget gravida cum sociis natoque penatibus et magnis. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Interdum velit euismod in
+                                pellentesque massa placerat duis ultricies. Enim facilisis gravida neque convallis a cras semper. Elementum pulvinar etiam non quam lacus. A pellentesque sit amet porttitor eget dolor morbi non.
+                                Feugiat in fermentum posuere urna nec tincidunt praesent. Lacus sed turpis tincidunt id aliquet risus feugiat in. Viverra orci sagittis eu volutpat odio. Et malesuada fames ac turpis egestas sed. Auctor augue 
+                                mauris augue neque. Tincidunt eget nullam non nisi est sit. Habitant morbi tristique senectus et netus et malesuada fames. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Nam aliquam
+                                sem et tortor consequat. In fermentum et sollicitudin ac orci phasellus egestas. Convallis posuere morbi leo urna molestie at. Molestie a iaculis at erat pellentesque adipiscing commodo elit at. Eget nunc
+                                scelerisque viverra mauris in. Suspendisse potenti nullam ac tortor. Facilisi nullam vehicula ipsum a arcu cursus vitae congue. Elementum facilisis leo vel fringilla est ullamcorper. Nec ultrices dui sapien 
+                                eget mi proin sed libero. Sapien eget mi proin sed. Phasellus faucibus scelerisque eleifend donec.
+                            </p>
+                        </div>
+                        
+
+                        </img>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    p {
+                                        column-count: 5;
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="carte">
+                    <h4>Column-gap</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Accompagner par la propriété juste au-dessus, la propriété column-gap, permet de personaliser la taille de l'espacement entre les colonnes.
+                        </p>
+                        <p class="carte_description_exemple">
+                            Dans cet exemple ci-dessous, j'ai appliqué la propriété column-gap sur ce texte à 5 colonnes avec la valeur 4px.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <div >
+                            <p class="column-gap_exemple">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis. Nec feugiat nisl pretium fusce id.
+                                Purus sit amet luctus venenatis lectus magna. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Sed viverra
+                                tellus in hac habitasse platea dictumst. Scelerisque varius morbi enim nunc. Aenean sed adipiscing diam donec adipiscing tristique. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Nascetur
+                                ridiculus mus mauris vitae ultricies leo. Etiam dignissim diam quis enim lobortis scelerisque. Diam maecenas ultricies mi eget. Massa eget egestas purus viverra accumsan in. Magna eget est lorem ipsum
+                                dolor sit amet consectetur. Sed vulputate mi sit amet mauris. Turpis tincidunt id aliquet risus feugiat in. Ac odio tempor orci dapibus ultrices. Sit amet consectetur adipiscing elit duis tristique
+                                sollicitudin nibh. Purus faucibus ornare suspendisse sed nisi. Enim sed faucibus turpis in eu mi bibendum. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Dignissim diam quis enim
+                                lobortis scelerisque fermentum. Tortor at risus viverra adipiscing at in tellus. Scelerisque purus semper eget duis at tellus at urna condimentum. Faucibus vitae aliquet nec ullamcorper sit amet risus 
+                                nullam. Pharetra vel turpis nunc eget. Maecenas accumsan lacus vel facilisis volutpat est velit. Dignissim diam quis enim lobortis scelerisque fermentum dui.
+                                Tellus pellentesque eu tincidunt tortor. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Ullamcorper morbi tincidunt ornare massa eget. Velit euismod in pellentesque massa.
+                            </p>
+                        </div>
+                        
+
+                        </img>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    p {
+                                        column-count: 5;
+                                        column-gap: 4px;
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="f">
+            <h3>F</h3>
+            <div class="box-cartes">
+                <div class="carte">
+                    <h4>Filter</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Avec la propriété CSS3 Filter, nous pouvons appliquer des filtres à des éléments HTML.
+                        </p>
+                        <p>Voici une liste des valeurs possibles avec la propriété CSS filter :</p>
+                        <ul class="carte_description_propriete_liste">
+                            <li>none</li>
+                            <li>blur()</li>
+                            <li>brightness()</li>
+                            <li>contrast()</li>
+                            <li>drop-shadow()</li>
+                            <li>grayscale()</li>
+                            <li>hue-rotate()</li>
+                            <li>invert()</li>
+                            <li>opacity()</li>
+                            <li>saturate()</li>
+                            <li>sepia()</li>
+                            <li>url()</li>
+                        </ul>
+                        <p class="carte_description_exemple">
+                            Sur les trois images ci-dessous, la première contient la propriété filter avec la valeur brightness à 20%, la seconde contrast à 200% ainsi que la troisième saturate à 300%.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <div class="box_filter_exemple">
+                            <img class="filter_exemple1" src="https://i.ibb.co/z8DqZNR/324657645-510964754465755-1364415870542309143-n-1.jpg" alt="">
+                            <img class="filter_exemple2" src="https://i.ibb.co/z8DqZNR/324657645-510964754465755-1364415870542309143-n-1.jpg" alt="">
+                            <img class="filter_exemple3" src="https://i.ibb.co/z8DqZNR/324657645-510964754465755-1364415870542309143-n-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    .image1 {
+                                        filter: brightness(20%);
+                                    }
+                                    
+                                    .image2 {
+                                        filter: contrast(200%);
+                                    }
+                                    
+                                    .image3 {
+                                        filter: saturate(300%);
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="carte">
+                    <h4>Flex</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            La propriété Flex est une propriété raccourcie, elle regroupe les propriétés flex-basis, flex-grow et flex-shrink. Cette propriété peut contenir jusqu'à trois valeurs, une pour flex-basis, une pour flex-gros ainsi qu'une pour flex-shrink.
+                        </p>
+                        <p class="carte_description_exemple">
+                            Placer votre curseur sur la boîte de couleur bleue pour voir la propriété flex faire son travail sur ses enfants. La boite rétrécira, seule la boîte 3 ne contient pas la propriété flex.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <div class="box_filter_exemple flex_exemple_box">
+                            <div class="flex_exemple_square1">1</div>
+                            <div class="flex_exemple_square2">2</div>
+                            <div class="flex_exemple_square3">3</div>
+                            <div class="flex_exemple_square4">4</div>
+                        </div>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    .boite1 {
+                                        flex: 20%;
+                                    }
+                                    
+                                    .boite2{
+                                        flex: 0 1;
+                                    }
+                                    
+                                    .boite4 {
+                                        flex: 1;
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="g">
+            <h3>G</h3>
+            <div class="box-cartes">
+                <div class="carte">
+                    <h4>Grid</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Comme son nom l'indique, la propriété Grid vient ajouter une grille au CSS, cette grille permet entre autres de jouer avec la disposition des éléments.
+                            Grid est composé de colonnes (columns) et de rangées (rows) et d'une grille explicite et implicite. Afin de déterminé le nombre sur combien de row et de columns nous voulons disposer nos éléments, nous utilisons l'unité relative fr.
+                        </p>
+                        <p class="carte_description_exemple">
+                            Dans cet exemple les boîtes orange seront disposées à l'aide de la propriété Grid ainsi que ses autres propriétés lui permettant une meilleure précision.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <div class="grid_exemple_wrapper">
+                            <div id="square1" class="grid_exemple_square"><p>1</p></div>
+                            <div id="square2" class="grid_exemple_square"><p>2</p></div>
+                            <div id="square3" class="grid_exemple_square"><p>3</p></div>
+                        </div>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    .containeur {
+                                        display: grid; 
+                                        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+                                        gap: 0px;
+                                        height: 100%;
+                                    }
+
+                                    .square1 {
+                                        grid-row: 1 / 2;
+                                        grid-column: 3 / 4;
+                                    }
+
+                                    .square2 {
+                                        grid-row: 2 / 3;
+                                        grid-column: 1 / 2;
+                                    }
+
+                                    .square3 {
+                                        grid-row: 3 / 4;
+                                        grid-column: 4 / 5;
+                                    }
+                                </span>
+
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="m">
+            <h3>M</h3>
+            <div class="box-cartes">
+                <div class="carte">
+                    <h4>Media queries</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            media queries permet de modifier des propriétés css d'une page si des conditions sont remplies. Lorsque ces fameuses conditions sont remplies des valeurs css s'activent.
+                        </p>
+                        <p>Voici une liste de caractéristiques sur lesquels les media queries peuvent se reposer</p>
+                        <ul>
+                            <li>width</li>
+                            <li>height</li>
+                            <li>aspect-ration</li>
+                            <li>orientation</li>
+                            <li>resolution</li>
+                            <li>scan</li>
+                            <li>grid</li>
+                            <li>update</li>
+                            <li>overflow-block</li>
+                            <li>overflow-inline</li>
+                            <li>color</li>
+                            <li>color-gamut</li>
+                            <li>color-index</li>
+                            <li>display-moded</li>
+                            <li>monochrome</li>
+                            <li>inverted-colors</li>
+                            <li>pointer</li>
+                            <li>hover</li>
+                            <li>any-pointer</li>
+                            <li>any-hover</li>
+                            <li>light-level</li>
+                            <li>prefers-reduced-motion</li>
+                            <li>device-width</li>
+                            <li>device-height</li>
+                        </ul>
+                        
+                        <p class="carte_description_exemple">
+                            Si vous passez votre navigateur en mode fullscreen la couleur du texte de la phrase ci-dessous deviendra vert.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <p class="exemple_media-queries">Incroyable n'est-ce pas?</p>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    p {
+                                        color: red;    
+                                    }
+                                    
+                                    @media all and (display-mode: fullscreen) {
+                                        p {
+                                            color: green;    
+                                        }
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="carte">
+                    <h4>Mix-blend-mode</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Avec la propriété mix-blend-mode, nous pouvons déterminer de quelle façon l'élément viser va se mélanger avec son élément parent et son fond. Un peu comme les modes de lumières sur photoshop.
+                        </p>
+                        <p>Il existe plusieurs valeurs attachées à cette propriété, en voici quelques-unes:</p>
+                        <ul class="carte_description_propriete_liste">
+                            <li>normal</li>
+                            <li>multiply</li>
+                            <li>screen</li>
+                            <li>overlay</li>
+                            <li>darken</li>
+                            <li>lighten</li>
+                            <li>color-dodge</li>
+                            <li>color-burn</li>
+                            <li>hard-light</li>
+                            <li>soft-light</li>
+                            <li>difference</li>
+                            <li>exclusion</li>
+                            <li>hue</li>
+                            <li>saturation</li>
+                            <li>color</li>
+                            <li>luminosity</li>
+                        </ul>
+                        <p class="carte_description_exemple">
+                            Dans cet exemple ci-dessous, vous pouvez apercevoir une photo de Ye qui marche avec ses grosses bottes avec la propriété mix-blend-mode ainsi que la valeur différence par-dessus une image gif.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <div class="box_mix-blend-mode_exemple">
+                            <img class="mix-blend-mode_exemple" src="https://i.kym-cdn.com/photos/images/newsfeed/002/374/881/14e.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    .parent {
+                                        align-items: center;
+                                        background-image: url(https://media0.giphy.com/media/oe33xf3B50fsc/giphy.gif);
+                                        display: flex;
+                                        height: 200px;
+                                        justify-content: center;
+                                        width: 200px;
+                                    }
+                                    
+                                    .ye {
+                                        height: 150px;
+                                        mix-blend-mode: difference;
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="o">
+            <h3>O</h3>
+            <div class="box-cartes">
+                <div class="carte">
+                    <h4>Opacity</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Comme son nom l'indique, avec la propriété opacity nous pouvons déterminer l'opacité d'un élément html. La valeur doit être indiquée en %.
+                        </p>
+                        <p class="carte_description_exemple">
+                            Dans l'exemple ci-dessous, l'image à la propriété css opacity accompagné de sa valeur à 40%.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <img class="exemple_opacity" src="https://pyxis.nymag.com/v1/imgs/884/aa6/b0e82cbff2713b95784ae5914e41666122-will-smith-chris-rock-slap-oscars.1x.rsocial.w1200.jpg" alt="">
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    img {
+                                        opacity: 40%;
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="t">
+            <h3>T</h3>
+            <div class="box-cartes">                
+                <div class="carte">
+                    <h4>Text-decoration-color</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Dans un texte, la propriété CSS text-decoration-color sert à définir la couleur de la décoration du texte ajouté grâce à la propriété raccourcie text-decoration.
+                        </p>
+                        <p class="carte_description_exemple">
+                            Dans l'exemple ci-dessous la phrase est sous-lignée en rouge avec l'ajout de la propriété CSS Text-decoration-color et de la valeur red.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <p class="exemple_text-decoration-color">Ceci est une phrase courte mais réussie !</p>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    p {
+                                        text-decoration:underline;
+                                        text-decoration-color: red;
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="carte">
+                    <h4>Text-decoration-line</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Avec la propriété CSS text-decoration-line, nous pouvons ajouter de la décoration linéaire dans les textes HTML.
+                        </p>
+                        <p>Voici une liste des valeurs possible avec text-decoration-line:</p>
+                        <ul>
+                            <li>none</li>
+                            <li>underline</li>
+                            <li>overline</li>
+                            <li>line-through</li>
+                        </ul>
+                        <p class="carte_description_exemple">
+                            Dans l'exemple ci-dessous, le texte est accompagné de la propriété CSS text-decoration-line ainsi que de la valeur line-through.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <p class="exemple_text-decoration-line">Voici une autre phrase courte mais réussie !</p>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    p {
+                                        text-decoration-line: line-through;
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="carte">
+                    <h4>Text-decoration-style</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Avec la propriété CSS text-decoration-style nous pouvons intervenir sur le style de ligne ajouté avec la propriété text-decoration-line. 
+                        </p>
+                        <p class="carte_description_exemple">
+                            Dans cette phrase ci-dessous, nous venons ajouter la propriété text-decoration-line accompagnée par la propriété text-decoration-line et la valeur wavy.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <p class="exemple_text-decoration-style">Voici encore une autre phrase courte mais réussie !</p>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    p {
+                                        text-decoration-line: underline;
+                                        text-decoration-style: wavy;
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="carte">
+                    <h4>Transform</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Avec la propriété transform nous pouvons modifier la forme et la présentation d'un élément, comme le pivoter ou le déformer.
+                        </p>
+                        <p>
+                            Voici une liste des valeurs possible avec cettre propriété
+                        </p>
+                        <ul>
+                            <li>matrix</li>
+                            <li>perspective</li>
+                            <li>rotate</li>
+                            <li>translate</li>
+                            <li>scale</li>
+                            <li>skew</li>
+                        </ul>
+                        <p class="carte_description_exemple">
+                            Dans cet exemple ci-dessous, vous pouver voir plusieurs belles formes déformés ou déplacés par la propriétée transform.
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <div class="exemple_transform">
+                            <div class="container_exemple_transform">
+                                <div class="box_canvas">
+                                    <div class=".box_canvas_sousbox">
+                                        <canvas width="200" height="200" id="forme1"></canvas>
+                                    </div>
+                                </div>
+                                <div class="box_canvas">
+                                    <div class=".box_canvas_sousbox">
+                                        <canvas width="200" height="200" id="forme2"></canvas>
+                                    </div>
+                                </div>
+                                <div class="box_canvas">
+                                    <div class=".box_canvas_sousbox">
+                                        <canvas width="200" height="200" id="forme3"></canvas>
+                                    </div>
+                                </div>
+                                <div class="box_canvas">
+                                    <div class=".box_canvas_sousbox">
+                                        <canvas width="200" height="200" id="forme4"></canvas>
+                                    </div>
+                                </div>
+                                <div class="box_canvas">
+                                    <div class=".box_canvas_sousbox">
+                                        <canvas width="200" height="200" id="forme5"></canvas>
+                                    </div>
+                                </div>    
+                                <div class="box_canvas">
+                                    <div class=".box_canvas_sousbox">
+                                        <canvas width="200" height="200" id="forme6"></canvas>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    #carre {
+                                        transform: transform: translate(120px, 20px) scale(3, 1);
+                                    }
+                                    
+                                    #etoile {
+                                        transform: scale(1,0.5);
+                                    }
+                                    
+                                    #pentagone {
+                                        transform: skew(1deg, 20deg);
+                                    }
+                                    
+                                    #para {
+                                        transform: matrix(0.7,0.2,0.3,1,0.8,0.2);
+                                    }
+                                    
+                                    #triangle {
+                                        transform: rotate(0.2turn);
+                                    }
+                                    
+                                    #cercle {
+                                        transform: perspective(20px);
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="carte">
+                    <h4>Transition</h4>
+                    <div class="carte_description">
+                        <p class="carte_description_propriete">
+                            Avec la propriété CSS transition, nous pouvons venir intervenir non seulement sur les animations mais également sur les changements d'état des éléments visés, permettant un changement plus fluide.
+                        </p>
+                        <p class="carte_description_exemple">
+                            Dans cet exemple si on place le curseur sur le carré, il changera de couleur et deviendra également un rond avec la propriété CSS Transition et les valeurs background-color et border-radius à .5s .
+                        </p>
+                    </div>
+                    <div class="carte_exemple">
+                        <div class="exemple_transition">
+                            <p> </p>
+                        </div>
+                    </div>
+                    <div class="carte_code">
+                        <pre>
+                            <code>
+                                <span>
+                                    .square {
+                                        background-color: orange;
+                                        width: 200px;
+                                        height: 200px;
+                                    }
+                                    
+                                    .square:hover {
+                                        border-radius: 100px;
+                                        background-color: cornflowerblue;
+                                        transition: border-radius 5s, background-color 5s ;
+                                    }
+                                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>582-AGT-LI - Réalisation de site web</li>
+            <li>TL-01 - CSS3</li>
+            <li>Bryan Jobin</li>
+        </ul>
+    </footer>
+</body>
+</html>
